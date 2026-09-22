@@ -343,3 +343,35 @@
     flex:0 0 18% !important;
   }
 }
+
+/* v18 mobile gallery heading: simple full-width optical centering */
+@media (max-width:600px){
+  .gallery .section-title{
+    position:static !important;
+    display:block !important;
+    width:100% !important;
+    min-height:0 !important;
+    margin:0 0 18px 0 !important;
+    padding:0 !important;
+    text-align:center !important;
+  }
+  .gallery .section-title i{
+    display:none !important;
+  }
+  .gallery .section-title h1{
+    position:static !important;
+    display:block !important;
+    left:auto !important;
+    right:auto !important;
+    top:auto !important;
+    transform:none !important;
+    width:100% !important;
+    max-width:none !important;
+    margin:0 !important;
+    padding:0 0 0 .45em !important;
+    box-sizing:border-box !important;
+    text-align:center !important;
+    text-indent:0 !important;
+    white-space:nowrap !important;
+  }
+}
