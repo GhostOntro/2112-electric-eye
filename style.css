@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&family=Cormorant+Garamond:ital,wght@0,400;1,500&display=swap');
+:root{--ink:#020b12;--paper:#dce8f2;--muted:#a9bfd0;--red:#ff392f;--line:#afc5d4}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#020b12;color:var(--paper);font-family:Georgia,'Times New Roman',serif}a{color:inherit;text-decoration:none}.site-header{height:66px;position:absolute;z-index:5;top:0;left:0;right:0;display:flex;align-items:center;justify-content:space-between;padding:0 4.1vw;background:linear-gradient(#02070b99,transparent)}.brand{font-size:18px;letter-spacing:.27em;color:#ff4a3e;text-shadow:0 0 10px #f22}.site-header nav,.detail-head nav{display:flex;gap:34px;font-size:9px;letter-spacing:.25em}.hero{height:min(75vw,720px);min-height:520px;max-height:720px;position:relative;overflow:hidden;border-bottom:2px solid #d5e1e9;background-image:linear-gradient(90deg,rgba(0,4,8,.08),rgba(0,4,8,.01)),url('images/hero.jpg');background-size:cover;background-position:center 49%;background-repeat:no-repeat}.quote{position:absolute;top:19.5%;right:7.2%;width:310px;text-align:center;font-size:15px;line-height:1.45;letter-spacing:.025em;text-shadow:0 1px 4px #000}.quote span{display:block;width:135px;border-top:1px solid #aeb9c0;margin:15px auto 11px}.quote em{color:#ff3b31;font-size:17px}.hero-meta{position:absolute;left:3.5%;bottom:24px;letter-spacing:.28em;font-size:9px}.hero-meta b,.hero-meta small{display:block;font-weight:400}.hero-meta small{font-size:7px;margin-top:6px}.curious{position:absolute;right:3.7%;bottom:24px;text-align:center;font-size:7px;line-height:1.7;letter-spacing:.3em}.down{position:absolute;top:52%;right:19.4%;width:14px;height:14px;border-right:1px solid #dbe7ef;border-bottom:1px solid #dbe7ef;transform:rotate(45deg)}.gallery{padding:14px 3.3vw 26px;background:radial-gradient(circle at 50% 20%,#061725 0,#020b12 56%,#01070b 100%)}.section-title{display:flex;align-items:center;justify-content:center;gap:18px}.section-title i{width:62px;border-top:1px solid #8ea2af}.section-title h1{font-weight:400;font-size:18px;letter-spacing:.45em;margin:0}.gallery-sub{text-align:center;margin:6px 0 14px;font-size:7px;letter-spacing:.23em;color:#a9c2d4}.grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:13px 14px}.card{text-align:center;min-width:0}.card button{width:100%;padding:0;border:1px solid #cfe9fb;box-shadow:0 0 8px #73b9e866;background:#000;cursor:pointer}.card img{display:block;width:100%;aspect-ratio:1.36/1;object-fit:cover}.caption{padding-top:5px}.caption h3{font-size:11px;font-weight:400;line-height:1.1;margin:0 0 2px}.caption p{white-space:pre-line;margin:0;font-size:8px;line-height:1.25;color:#d2dce3}.about,.contact{max-width:980px;margin:auto;padding:70px 35px;border-top:1px solid #627581}.about h2,.contact h2{font-size:17px;letter-spacing:.35em;font-weight:400}.about p,.contact p{color:#afc1ce}.lightbox{position:fixed;inset:0;z-index:20;display:none;overflow:auto;background:radial-gradient(circle at 50% 30%,#061725,#020a10 65%);color:#d9e5ed}.lightbox.active{display:block}.detail-head{height:54px;padding:0 3.4vw;display:flex;align-items:center;justify-content:space-between;border-top:3px solid #fff}.detail-head>span{font-size:17px;letter-spacing:.3em;color:#ff4a3e;text-shadow:0 0 8px #e22}.x{position:absolute;right:10px;top:55px;background:none;border:0;color:#adc1ce;font-size:25px;cursor:pointer}.back{margin:6px 3.5vw;font-size:9px;letter-spacing:.18em;cursor:pointer}.viewer{display:grid;grid-template-columns:1.85fr .88fr;gap:42px;padding:0 3.5vw;align-items:center}.image-col img{display:block;width:100%;max-height:68vh;object-fit:contain;border:1px solid #d6e8f5;box-shadow:0 0 10px #66bce755}.image-sign{font-size:8px;letter-spacing:.3em;margin-top:13px}.info h2{font-size:17px;font-weight:400;letter-spacing:.28em;text-transform:uppercase;margin:0 0 10px}.rule{border-top:1px solid #94a8b5}.info p{font-size:12px;line-height:1.45;white-space:pre-line}.info a{display:inline-block;border:1px solid #c8d9e4;padding:9px 20px;margin-top:5px;font-size:8px;letter-spacing:.18em}.detail-nav{display:flex;justify-content:flex-end;align-items:center;gap:20px;padding:12px 4vw}.detail-nav button{border:0;background:none;color:#bdcfdb;font:8px Georgia,serif;letter-spacing:.18em;cursor:pointer}.detail-nav i{height:14px;border-left:1px solid #8295a1}
+@media(min-width:1300px){.hero{height:720px}.grid{gap:18px}.caption h3{font-size:13px}.caption p{font-size:9px}}
+@media(max-width:900px){.site-header{padding:0 20px}.brand{font-size:12px}.site-header nav{gap:14px}.hero{height:72vh;min-height:520px;background-position:center}.quote{right:5%;top:20%;width:270px}.grid{grid-template-columns:repeat(3,1fr)}.viewer{grid-template-columns:1fr}.info{padding-bottom:40px}}
+@media(max-width:600px){.site-header nav{gap:10px;font-size:7px}.brand{font-size:9px}.hero{height:80vh;background-position:43% center}.quote{top:20%;right:5%;width:220px;font-size:12px}.hero-meta{left:20px}.curious{right:20px}.down{display:none}.grid{grid-template-columns:repeat(2,1fr)}.gallery{padding-left:14px;padding-right:14px}}
+
+/* Final approved-preview adjustments */
+.site-header{height:118px;align-items:flex-start;padding-top:22px;background:linear-gradient(#02070b88,transparent)}
+.brand{display:flex;flex-direction:column;gap:3px;font-family:Georgia,'Times New Roman',serif;font-size:26px;line-height:1.05;letter-spacing:.31em;color:#ff5148;text-shadow:0 0 8px #ff1d19,0 0 18px #ef1717,0 0 34px #c90f16;font-weight:400;white-space:nowrap}
+.brand span:first-child{font-size:29px}
+.site-header nav{padding-top:7px}
+.hero{height:66.6504vw;min-height:0;max-height:none;overflow:hidden;background-image:linear-gradient(90deg,rgba(0,4,8,.04),rgba(0,4,8,.01)),url('images/hero.jpg');background-size:100% auto;background-position:center top;background-repeat:no-repeat}
+.quote{font-size:19px;line-height:1.48;color:#d9efff;text-shadow:0 0 5px #168dff,0 0 13px #0874ef,0 1px 4px #000;width:390px}
+.quote em{font-size:19px;color:#ff3b31;text-shadow:0 0 8px #e31c20}
+.hero-meta{font-size:11px;text-shadow:0 0 5px #168dff,0 0 12px #0874ef}
+.hero-meta small{font-size:8px}
+.curious,.gallery-sub{display:none!important}
+.gallery{padding-top:18px}
+.about p{font-size:15px;line-height:1.7;max-width:900px}
+@media(max-width:900px){.site-header{height:96px;padding-top:18px}.brand{font-size:18px}.brand span:first-child{font-size:21px}.hero{height:66.6504vw;min-height:0;background-position:center top}.quote{font-size:14px;width:300px}.quote em{font-size:16px}}
+@media(max-width:600px){.site-header{height:82px}.brand{font-size:13px}.brand span:first-child{font-size:16px}.hero{height:66.6504vw;min-height:0;background-position:center top}.quote{top:24%;right:4%;width:210px;font-size:10px}.quote em{font-size:12px}.hero-meta{bottom:12px;font-size:7px}.hero-meta small{font-size:5px}}
+
+/* Final delivery: hero at 75% scale, full uncropped 2048×1365 aspect ratio */
+.hero{
+  width:75%;
+  height:auto;
+  aspect-ratio:2048 / 1365;
+  margin:0 auto;
+  min-height:0;
+  max-height:none;
+  background-size:100% 100%;
+  background-position:center center;
+  background-repeat:no-repeat;
+}
+.site-header{
+  width:75%;
+  left:12.5%;
+  right:auto;
+}
+.site-header nav{
+  font-size:13px;
+  gap:38px;
+}
+.site-header nav a{
+  color:#ff5148;
+  text-shadow:0 0 6px #ff2b24,0 0 14px #e51c1c,0 0 24px #b90e14;
+}
+@media(max-width:900px){
+  .hero{width:75%;height:auto;aspect-ratio:2048 / 1365;background-size:100% 100%;background-position:center center}
+  .site-header{width:75%;left:12.5%;right:auto}
+  .site-header nav{font-size:11px;gap:20px}
+}
+@media(max-width:600px){
+  .hero{width:75%;height:auto;aspect-ratio:2048 / 1365;background-size:100% 100%;background-position:center center}
+  .site-header{width:75%;left:12.5%;right:auto;padding-left:10px;padding-right:10px}
+  .site-header nav{font-size:8px;gap:10px}
+}
+
+/* Corrected hero source dimensions: 2048 × 1148, displayed 25% smaller with no crop or distortion */
+.hero{
+  width:75%;
+  height:auto;
+  aspect-ratio:512 / 287;
+  margin:0 auto;
+  min-height:0;
+  max-height:none;
+  background-size:contain;
+  background-position:center top;
+  background-repeat:no-repeat;
+}
+@media(max-width:900px){.hero{width:75%;height:auto;aspect-ratio:512 / 287;background-size:contain;background-position:center top}}
+@media(max-width:600px){.hero{width:75%;height:auto;aspect-ratio:512 / 287;background-size:contain;background-position:center top}}
+
+/* Final override: hero restored to 100% width, preserving the source 2048×1148 aspect ratio */
+.hero{
+  width:100%;
+  margin-left:0;
+  margin-right:0;
+  height:auto;
+  aspect-ratio:512 / 287;
+  background-size:100% 100%;
+  background-position:center center;
+  background-repeat:no-repeat;
+}
+.site-header{
+  width:100%;
+  left:0;
+  right:0;
+}
+@media(max-width:900px){
+  .hero{width:100%;height:auto;aspect-ratio:512 / 287;background-size:100% 100%;background-position:center center}
+  .site-header{width:100%;left:0;right:0}
+}
+@media(max-width:600px){
+  .hero{width:100%;height:auto;aspect-ratio:512 / 287;background-size:100% 100%;background-position:center center}
+  .site-header{width:100%;left:0;right:0}
+}
+
+/* Requested typography/glow update */
+.brand{
+  font-family:'Trebuchet MS','Avenir Next','Segoe UI',Arial,sans-serif;
+  font-size:52px;
+  line-height:1.02;
+  letter-spacing:.25em;
+  font-weight:400;
+}
+.brand span:first-child{font-size:58px}
+.quote{
+  font-family:'Trebuchet MS','Avenir Next','Segoe UI',Arial,sans-serif;
+  font-size:38px;
+  line-height:1.45;
+  letter-spacing:.055em;
+  width:780px;
+  font-weight:300;
+}
+.quote em{font-family:Georgia,'Times New Roman',serif;font-size:38px}
+.section-title h1{color:#ff4a3e;text-shadow:0 0 7px #ff2b24,0 0 15px #e51c1c,0 0 26px #b90e14}
+.caption h3,.caption p{
+  color:#ff5148;
+  text-shadow:0 0 6px #ff2b24,0 0 13px #e51c1c,0 0 22px #b90e14;
+}
+.caption h3{font-size:22px}
+.caption p{font-size:16px}
+.about p{font-size:30px;line-height:1.7;max-width:none}
+@media(min-width:1300px){.caption h3{font-size:26px}.caption p{font-size:18px}}
+@media(max-width:900px){.brand{font-size:36px}.brand span:first-child{font-size:42px}.quote{font-size:28px;width:600px}.quote em{font-size:32px}.caption h3{font-size:18px}.caption p{font-size:14px}.about p{font-size:26px}}
+@media(max-width:600px){.brand{font-size:26px}.brand span:first-child{font-size:32px}.quote{font-size:20px;width:420px}.quote em{font-size:24px}.caption h3{font-size:16px}.caption p{font-size:12px}.about p{font-size:22px}}
+
+/* v7 precision corrections */
+
+/* Match the approved reference: extended geometric display face for the masthead. */
+.brand{
+  font-family:'Orbitron','Eurostile Extended','Microgramma D Extended','Arial Wide',sans-serif;
+  font-size:52px;
+  line-height:1.02;
+  letter-spacing:.25em;
+  font-weight:400;
+}
+.brand span:first-child{font-size:58px}
+
+/* Reference subtitle: elegant book/serif face, reduced from v6 and kept right of the galactic core. */
+.quote{
+  font-family:'Cormorant Garamond',Garamond,Georgia,'Times New Roman',serif;
+  font-size:24px;
+  line-height:1.42;
+  letter-spacing:.045em;
+  width:500px;
+  right:5.5%;
+  top:22%;
+}
+.quote em{
+  font-family:'Cormorant Garamond',Garamond,Georgia,'Times New Roman',serif;
+  font-size:26px;
+  font-style:italic;
+}
+
+/* Gallery descriptors stay light; only their glow is red. */
+.caption h3,.caption p{
+  color:var(--paper);
+  text-shadow:0 0 5px rgba(255,40,32,.95),0 0 11px rgba(235,24,24,.72),0 0 20px rgba(185,14,20,.5);
+}
+.caption h3{font-size:17px}
+.caption p{font-size:12px}
+@media(min-width:1300px){.caption h3{font-size:18px}.caption p{font-size:13px}}
+
+/* Gallery heading glow + balanced vertical breathing room between hero/title/images. */
+.section-title{margin-bottom:18px}
+.section-title h1{color:var(--paper);text-shadow:0 0 5px #ff2b24,0 0 12px #e51c1c,0 0 22px #b90e14}
+.gallery{padding-top:18px}
+
+/* About copy: retain the enlargement, but substantially less than v6. */
+.about p{font-size:21px;line-height:1.7;max-width:none}
+
+@media(max-width:900px){
+  .quote{font-size:20px;width:410px;right:4%;top:22%}
+  .quote em{font-size:22px}
+  .caption h3{font-size:15px}.caption p{font-size:11px}
+  .about p{font-size:19px}
+}
+@media(max-width:600px){
+  .quote{font-size:14px;width:270px;right:3%;top:22%}
+  .quote em{font-size:16px}
+  .caption h3{font-size:13px}.caption p{font-size:10px}
+  .about p{font-size:18px}
+}
+
+/* v8.1 requested correction: title -15%; subtitle uses the same approved display face. */
+.brand{
+  font-size:44.2px;
+}
+.brand span:first-child{font-size:49.3px}
+.quote,
+.quote em{
+  font-family:'Orbitron','Eurostile Extended','Microgramma D Extended','Arial Wide',sans-serif;
+}
