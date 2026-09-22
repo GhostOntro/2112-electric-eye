@@ -15,7 +15,7 @@ const photos=[
 ["phases-moon.jpg","The Phases of the Moon","Composite image.\n200+ subs for each phase."],
 ["mineral-moon.png","The Mineral Moon.","Composite image.\n200 subs stacked."],
 ["moonclose3.jpg","Drawing Down the Moon.","South west of Mare Nubium,.\nBetween the craters Tycho and Stevinus.\n270 stacked images."],
-["mawv3.jpg","Sadr region (IC 1318)","2025 Bortle 8.\n12H total exposure."],
+["sadr-ic1318-20250923.jpg?v=20260923a","Sadr region (IC 1318)","2025 Bortle 8.\n12H total exposure."],
 ["quintetplusone.jpg","NGC 7331 Galaxy and friends, along with Stephan’s Quintet.","2026 Bortle 8.\n9 hours total exposure."],
 ["rosette.jpg","Rosette or ‘Skull’ Nebula (C49)","2024 Bortle 8.\n14 hours total exposure."],
 ["lagoon.jpg","Lagoon nebula (M8)","2023 Bortle 2.\n5 hours total exposure."],
