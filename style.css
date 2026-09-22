@@ -268,3 +268,94 @@
   .quote{font-size:9px;width:calc(100% - 28px)}
   .quote em{font-size:10px}
 }
+
+
+/* v12 mobile hero correction: title/nav and quote live outside the photograph */
+@media (max-width:600px){
+  .site-header{
+    position:relative !important;
+    width:100% !important;
+    left:auto !important;
+    right:auto !important;
+    top:auto !important;
+    height:auto !important;
+    min-height:0 !important;
+    padding:14px 12px 13px !important;
+    display:flex !important;
+    flex-wrap:wrap !important;
+    align-items:flex-start !important;
+    justify-content:space-between !important;
+    gap:12px 8px !important;
+    background:#020b12 !important;
+  }
+  .brand{
+    flex:1 1 100% !important;
+    width:100% !important;
+    font-size:15px !important;
+    line-height:1.08 !important;
+    letter-spacing:.20em !important;
+    white-space:normal !important;
+  }
+  .brand span:first-child{font-size:17px !important}
+  .site-header nav{
+    width:100% !important;
+    margin:0 !important;
+    padding:2px 0 0 !important;
+    display:flex !important;
+    justify-content:flex-start !important;
+    gap:20px !important;
+    font-size:8px !important;
+    letter-spacing:.14em !important;
+  }
+  .hero{
+    position:relative !important;
+    width:100% !important;
+    height:auto !important;
+    aspect-ratio:512 / 287 !important;
+    margin:0 !important;
+    overflow:hidden !important;
+    background-size:100% 100% !important;
+    background-position:center center !important;
+  }
+  .hero .quote{display:none !important}
+  .hero-meta{
+    left:10px !important;
+    right:10px !important;
+    bottom:8px !important;
+    max-width:72% !important;
+    font-size:6px !important;
+    line-height:1.35 !important;
+    letter-spacing:.14em !important;
+  }
+  .hero-meta small{font-size:5px !important;letter-spacing:.10em !important}
+  .hero::after{
+    content:"Against the waves of darkness and death\A I’m walking with Eternal Brightness\A in my eyes.\A\A — Spectral Lore";
+    white-space:pre-line;
+    display:block;
+    position:absolute;
+    left:-9999px;
+  }
+  .gallery::before{
+    content:"Against the waves of darkness and death\A I’m walking with Eternal Brightness\A in my eyes.\A\A Spectral Lore";
+    white-space:pre-line;
+    display:block;
+    max-width:calc(100% - 36px);
+    margin:0 auto 28px;
+    padding:20px 0 4px;
+    text-align:center;
+    font-family:'Orbitron','Eurostile Extended','Microgramma D Extended','Arial Wide',sans-serif;
+    font-size:10px;
+    line-height:1.6;
+    letter-spacing:.045em;
+    color:#d9efff;
+    text-shadow:0 0 5px #168dff,0 0 13px #0874ef,0 1px 4px #000;
+  }
+  .gallery{padding-top:0 !important}
+}
+@media (max-width:390px){
+  .site-header{padding:12px 10px !important}
+  .brand{font-size:13px !important;letter-spacing:.16em !important}
+  .brand span:first-child{font-size:15px !important}
+  .site-header nav{gap:14px !important;font-size:7px !important}
+  .gallery::before{font-size:9px;max-width:calc(100% - 24px);margin-bottom:24px}
+}
