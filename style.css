@@ -285,3 +285,31 @@
   .hero .quote{top:10% !important;right:2.5% !important;width:44% !important;font-size:clamp(6.5px,2.2vw,8.5px) !important}
   .hero .quote em{font-size:clamp(7px,2.35vw,9.5px) !important}
 }
+
+/* v16 mobile correction: keep THE GALLERY visually centered */
+@media (max-width:600px){
+  .gallery .section-title{
+    width:100% !important;
+    display:grid !important;
+    grid-template-columns:1fr auto 1fr !important;
+    align-items:center !important;
+    justify-content:initial !important;
+    gap:12px !important;
+    margin-left:0 !important;
+    margin-right:0 !important;
+    text-align:center !important;
+  }
+  .gallery .section-title i{
+    width:100% !important;
+    min-width:0 !important;
+  }
+  .gallery .section-title h1{
+    margin:0 !important;
+    padding:0 !important;
+    text-align:center !important;
+    justify-self:center !important;
+    white-space:nowrap !important;
+    /* compensate for the heading's trailing letter-spacing */
+    text-indent:.45em !important;
+  }
+}
