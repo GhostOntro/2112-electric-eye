@@ -398,3 +398,33 @@
   }
   .quote em{font-size:clamp(7px,2.3vw,9.5px)}
 }
+
+/* v14 definitive mobile subtitle fix: undo v12 hiding/duplicate below-hero quote */
+@media (max-width:600px){
+  .hero .quote{
+    display:block !important;
+    position:absolute !important;
+    top:13% !important;
+    right:3.5% !important;
+    left:auto !important;
+    bottom:auto !important;
+    transform:none !important;
+    width:43% !important;
+    max-width:none !important;
+    margin:0 !important;
+    padding:0 !important;
+    text-align:center !important;
+    font-size:clamp(7px,2.25vw,10px) !important;
+    line-height:1.42 !important;
+    letter-spacing:.025em !important;
+    z-index:3 !important;
+  }
+  .hero .quote span{width:42% !important;margin:5px auto 4px !important}
+  .hero .quote em{font-size:clamp(8px,2.45vw,11px) !important}
+  .gallery::before{content:none !important;display:none !important}
+  .gallery{padding-top:18px !important}
+}
+@media (max-width:390px){
+  .hero .quote{top:12% !important;right:3% !important;width:44% !important;font-size:clamp(6.5px,2.15vw,8.5px) !important}
+  .hero .quote em{font-size:clamp(7px,2.3vw,9.5px) !important}
+}
