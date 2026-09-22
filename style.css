@@ -193,3 +193,78 @@
 .quote em{
   font-family:'Orbitron','Eurostile Extended','Microgramma D Extended','Arial Wide',sans-serif;
 }
+
+/* v11 mobile layout: keep masthead and quote from covering the hero photograph */
+@media (max-width:600px){
+  .site-header{
+    position:relative;
+    width:100%;
+    height:auto;
+    min-height:0;
+    left:0;
+    right:auto;
+    padding:14px 14px 12px;
+    align-items:center;
+    gap:12px;
+    background:#020b12;
+  }
+  .brand{
+    flex:0 0 auto;
+    gap:1px;
+    font-size:15px;
+    line-height:1.08;
+    letter-spacing:.20em;
+  }
+  .brand span:first-child{font-size:17px}
+  .site-header nav{
+    margin-left:auto;
+    padding-top:0;
+    gap:12px;
+    font-size:7px;
+    letter-spacing:.16em;
+  }
+  .hero{
+    width:100%;
+    aspect-ratio:512 / 287;
+    margin:0 0 132px;
+    overflow:visible;
+    background-size:100% 100%;
+    background-position:center center;
+  }
+  .quote{
+    top:calc(100% + 14px);
+    right:auto;
+    left:50%;
+    transform:translateX(-50%);
+    width:calc(100% - 36px);
+    max-width:420px;
+    padding:0;
+    text-align:center;
+    font-size:10px;
+    line-height:1.55;
+    letter-spacing:.045em;
+    color:#d9efff;
+  }
+  .quote span{width:90px;margin:8px auto 6px}
+  .quote em{font-size:11px}
+  .hero-meta{
+    left:12px;
+    bottom:10px;
+    max-width:58%;
+    font-size:6px;
+    line-height:1.35;
+    letter-spacing:.18em;
+  }
+  .hero-meta small{font-size:5px;line-height:1.35;letter-spacing:.13em;margin-top:3px}
+  .gallery{padding-top:18px}
+}
+
+@media (max-width:390px){
+  .site-header{padding-left:10px;padding-right:10px;gap:8px}
+  .brand{font-size:13px;letter-spacing:.16em}
+  .brand span:first-child{font-size:15px}
+  .site-header nav{gap:8px;font-size:6px;letter-spacing:.12em}
+  .hero{margin-bottom:128px}
+  .quote{font-size:9px;width:calc(100% - 28px)}
+  .quote em{font-size:10px}
+}
