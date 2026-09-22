@@ -286,73 +286,16 @@
   .hero .quote em{font-size:clamp(7px,2.35vw,9.5px) !important}
 }
 
-/* v16 mobile correction: keep THE GALLERY visually centered */
+/* Mobile gallery heading — single authoritative rule */
 @media (max-width:600px){
   .gallery .section-title{
-    width:100% !important;
-    display:grid !important;
-    grid-template-columns:1fr auto 1fr !important;
-    align-items:center !important;
-    justify-content:initial !important;
-    gap:12px !important;
-    margin-left:0 !important;
-    margin-right:0 !important;
-    text-align:center !important;
-  }
-  .gallery .section-title i{
-    width:100% !important;
-    min-width:0 !important;
-  }
-  .gallery .section-title h1{
-    margin:0 !important;
-    padding:0 !important;
-    text-align:center !important;
-    justify-self:center !important;
-    white-space:nowrap !important;
-    /* compensate for the heading's trailing letter-spacing */
-    text-indent:.45em !important;
-  }
-}
-
-/* v17: true viewport-centered gallery heading on mobile */
-@media (max-width:600px){
-  .gallery .section-title{
-    position:relative !important;
     display:flex !important;
-    width:100% !important;
-    min-height:24px !important;
     align-items:center !important;
-    justify-content:space-between !important;
-    gap:0 !important;
-  }
-  .gallery .section-title h1{
-    position:absolute !important;
-    left:50% !important;
-    right:auto !important;
-    top:50% !important;
-    transform:translate(-50%,-50%) !important;
-    width:max-content !important;
-    margin:0 !important;
-    padding:0 !important;
-    text-indent:0 !important;
-    text-align:center !important;
-    white-space:nowrap !important;
-  }
-  .gallery .section-title i{
-    width:18% !important;
-    flex:0 0 18% !important;
-  }
-}
-
-/* v18 mobile gallery heading: simple full-width optical centering */
-@media (max-width:600px){
-  .gallery .section-title{
-    position:static !important;
-    display:block !important;
+    justify-content:center !important;
     width:100% !important;
-    min-height:0 !important;
-    margin:0 0 18px 0 !important;
+    margin:0 0 18px !important;
     padding:0 !important;
+    gap:0 !important;
     text-align:center !important;
   }
   .gallery .section-title i{
@@ -361,17 +304,22 @@
   .gallery .section-title h1{
     position:static !important;
     display:block !important;
+    width:auto !important;
+    margin:0 !important;
+    padding:0 !important;
     left:auto !important;
     right:auto !important;
     top:auto !important;
     transform:none !important;
-    width:100% !important;
-    max-width:none !important;
-    margin:0 !important;
-    padding:0 0 0 .45em !important;
-    box-sizing:border-box !important;
     text-align:center !important;
     text-indent:0 !important;
     white-space:nowrap !important;
+    /* Orbitron's letter-spacing adds space after the final glyph.
+       A pseudo-element balances that space without shifting the heading box. */
+  }
+  .gallery .section-title h1::before{
+    content:'';
+    display:inline-block;
+    width:.45em;
   }
 }
