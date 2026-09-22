@@ -194,237 +194,94 @@
   font-family:'Orbitron','Eurostile Extended','Microgramma D Extended','Arial Wide',sans-serif;
 }
 
-/* v11 mobile layout: keep masthead and quote from covering the hero photograph */
-@media (max-width:600px){
-  .site-header{
-    position:relative;
-    width:100%;
-    height:auto;
-    min-height:0;
-    left:0;
-    right:auto;
-    padding:14px 14px 12px;
-    align-items:center;
-    gap:12px;
-    background:#020b12;
-  }
-  .brand{
-    flex:0 0 auto;
-    gap:1px;
-    font-size:15px;
-    line-height:1.08;
-    letter-spacing:.20em;
-  }
-  .brand span:first-child{font-size:17px}
-  .site-header nav{
-    margin-left:auto;
-    padding-top:0;
-    gap:12px;
-    font-size:7px;
-    letter-spacing:.16em;
-  }
-  .hero{
-    width:100%;
-    aspect-ratio:512 / 287;
-    margin:0 0 132px;
-    overflow:visible;
-    background-size:100% 100%;
-    background-position:center center;
-  }
-  .quote{
-    top:calc(100% + 14px);
-    right:auto;
-    left:50%;
-    transform:translateX(-50%);
-    width:calc(100% - 36px);
-    max-width:420px;
-    padding:0;
-    text-align:center;
-    font-size:10px;
-    line-height:1.55;
-    letter-spacing:.045em;
-    color:#d9efff;
-  }
-  .quote span{width:90px;margin:8px auto 6px}
-  .quote em{font-size:11px}
-  .hero-meta{
-    left:12px;
-    bottom:10px;
-    max-width:58%;
-    font-size:6px;
-    line-height:1.35;
-    letter-spacing:.18em;
-  }
-  .hero-meta small{font-size:5px;line-height:1.35;letter-spacing:.13em;margin-top:3px}
-  .gallery{padding-top:18px}
-}
 
-@media (max-width:390px){
-  .site-header{padding-left:10px;padding-right:10px;gap:8px}
-  .brand{font-size:13px;letter-spacing:.16em}
-  .brand span:first-child{font-size:15px}
-  .site-header nav{gap:8px;font-size:6px;letter-spacing:.12em}
-  .hero{margin-bottom:128px}
-  .quote{font-size:9px;width:calc(100% - 28px)}
-  .quote em{font-size:10px}
-}
-
-
-/* v12 mobile hero correction: title/nav and quote live outside the photograph */
+/* v15 — single authoritative mobile layout. The real .quote stays INSIDE .hero. */
 @media (max-width:600px){
   .site-header{
     position:relative !important;
-    width:100% !important;
+    top:auto !important;
     left:auto !important;
     right:auto !important;
-    top:auto !important;
+    width:100% !important;
     height:auto !important;
     min-height:0 !important;
-    padding:14px 12px 13px !important;
+    padding:12px 14px !important;
     display:flex !important;
-    flex-wrap:wrap !important;
-    align-items:flex-start !important;
+    align-items:center !important;
     justify-content:space-between !important;
-    gap:12px 8px !important;
+    gap:10px !important;
     background:#020b12 !important;
   }
   .brand{
-    flex:1 1 100% !important;
-    width:100% !important;
+    flex:0 0 auto !important;
     font-size:15px !important;
     line-height:1.08 !important;
-    letter-spacing:.20em !important;
-    white-space:normal !important;
+    letter-spacing:.18em !important;
+    gap:1px !important;
   }
   .brand span:first-child{font-size:17px !important}
   .site-header nav{
-    width:100% !important;
-    margin:0 !important;
-    padding:2px 0 0 !important;
-    display:flex !important;
-    justify-content:flex-start !important;
-    gap:20px !important;
-    font-size:8px !important;
-    letter-spacing:.14em !important;
+    margin-left:auto !important;
+    padding:0 !important;
+    gap:11px !important;
+    font-size:7px !important;
+    letter-spacing:.12em !important;
   }
   .hero{
     position:relative !important;
     width:100% !important;
     height:auto !important;
     aspect-ratio:512 / 287 !important;
+    min-height:0 !important;
+    max-height:none !important;
     margin:0 !important;
     overflow:hidden !important;
     background-size:100% 100% !important;
     background-position:center center !important;
+    background-repeat:no-repeat !important;
   }
-  .hero .quote{display:none !important}
-  .hero-meta{
-    left:10px !important;
-    right:10px !important;
-    bottom:8px !important;
-    max-width:72% !important;
-    font-size:6px !important;
-    line-height:1.35 !important;
-    letter-spacing:.14em !important;
-  }
-  .hero-meta small{font-size:5px !important;letter-spacing:.10em !important}
-  .hero::after{
-    content:"Against the waves of darkness and death\A I’m walking with Eternal Brightness\A in my eyes.\A\A — Spectral Lore";
-    white-space:pre-line;
-    display:block;
-    position:absolute;
-    left:-9999px;
-  }
-  .gallery::before{
-    content:"Against the waves of darkness and death\A I’m walking with Eternal Brightness\A in my eyes.\A\A Spectral Lore";
-    white-space:pre-line;
-    display:block;
-    max-width:calc(100% - 36px);
-    margin:0 auto 28px;
-    padding:20px 0 4px;
-    text-align:center;
-    font-family:'Orbitron','Eurostile Extended','Microgramma D Extended','Arial Wide',sans-serif;
-    font-size:10px;
-    line-height:1.6;
-    letter-spacing:.045em;
-    color:#d9efff;
-    text-shadow:0 0 5px #168dff,0 0 13px #0874ef,0 1px 4px #000;
-  }
-  .gallery{padding-top:0 !important}
-}
-@media (max-width:390px){
-  .site-header{padding:12px 10px !important}
-  .brand{font-size:13px !important;letter-spacing:.16em !important}
-  .brand span:first-child{font-size:15px !important}
-  .site-header nav{gap:14px !important;font-size:7px !important}
-  .gallery::before{font-size:9px;max-width:calc(100% - 24px);margin-bottom:24px}
-}
-
-/* v13 mobile correction: keep the subtitle inside the hero, compact and clear of the central galactic core */
-@media (max-width:600px){
-  .hero{
-    margin:0;
-    overflow:hidden;
-  }
-  .quote{
-    top:13%;
-    right:3.5%;
-    left:auto;
-    transform:none;
-    width:43%;
-    max-width:none;
-    padding:0;
-    text-align:center;
-    font-size:clamp(7px,2.25vw,10px);
-    line-height:1.42;
-    letter-spacing:.025em;
-  }
-  .quote span{
-    width:42%;
-    margin:5px auto 4px;
-  }
-  .quote em{
-    font-size:clamp(8px,2.45vw,11px);
-  }
-}
-
-@media (max-width:390px){
-  .hero{margin:0}
-  .quote{
-    top:12%;
-    right:3%;
-    width:44%;
-    font-size:clamp(6.5px,2.15vw,8.5px);
-  }
-  .quote em{font-size:clamp(7px,2.3vw,9.5px)}
-}
-
-/* v14 definitive mobile subtitle fix: undo v12 hiding/duplicate below-hero quote */
-@media (max-width:600px){
   .hero .quote{
     display:block !important;
     position:absolute !important;
-    top:13% !important;
-    right:3.5% !important;
-    left:auto !important;
+    top:11% !important;
+    right:3% !important;
     bottom:auto !important;
+    left:auto !important;
     transform:none !important;
     width:43% !important;
     max-width:none !important;
     margin:0 !important;
     padding:0 !important;
     text-align:center !important;
-    font-size:clamp(7px,2.25vw,10px) !important;
-    line-height:1.42 !important;
+    font-family:'Orbitron','Eurostile Extended','Microgramma D Extended','Arial Wide',sans-serif !important;
+    font-size:clamp(7px,2.35vw,10px) !important;
+    line-height:1.45 !important;
     letter-spacing:.025em !important;
-    z-index:3 !important;
+    color:#d9efff !important;
+    text-shadow:0 0 5px #168dff,0 0 13px #0874ef,0 1px 4px #000 !important;
+    z-index:4 !important;
   }
-  .hero .quote span{width:42% !important;margin:5px auto 4px !important}
-  .hero .quote em{font-size:clamp(8px,2.45vw,11px) !important}
-  .gallery::before{content:none !important;display:none !important}
+  .hero .quote span{display:block !important;width:42% !important;margin:5px auto 4px !important}
+  .hero .quote em{font-size:clamp(8px,2.5vw,11px) !important}
+  .hero-meta{
+    left:12px !important;
+    bottom:9px !important;
+    max-width:58% !important;
+    font-size:6px !important;
+    line-height:1.35 !important;
+    letter-spacing:.16em !important;
+  }
+  .hero-meta small{font-size:5px !important;line-height:1.35 !important;letter-spacing:.11em !important;margin-top:3px !important}
+  .down{display:none !important}
   .gallery{padding-top:18px !important}
+  .gallery::before,.hero::after{content:none !important;display:none !important}
+  .grid{grid-template-columns:repeat(2,1fr) !important}
 }
 @media (max-width:390px){
-  .hero .quote{top:12% !important;right:3% !important;width:44% !important;font-size:clamp(6.5px,2.15vw,8.5px) !important}
-  .hero .quote em{font-size:clamp(7px,2.3vw,9.5px) !important}
+  .site-header{padding:10px !important;gap:7px !important}
+  .brand{font-size:13px !important;letter-spacing:.14em !important}
+  .brand span:first-child{font-size:15px !important}
+  .site-header nav{gap:7px !important;font-size:6px !important;letter-spacing:.09em !important}
+  .hero .quote{top:10% !important;right:2.5% !important;width:44% !important;font-size:clamp(6.5px,2.2vw,8.5px) !important}
+  .hero .quote em{font-size:clamp(7px,2.35vw,9.5px) !important}
 }
