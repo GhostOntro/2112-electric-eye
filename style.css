@@ -313,3 +313,33 @@
     text-indent:.45em !important;
   }
 }
+
+/* v17: true viewport-centered gallery heading on mobile */
+@media (max-width:600px){
+  .gallery .section-title{
+    position:relative !important;
+    display:flex !important;
+    width:100% !important;
+    min-height:24px !important;
+    align-items:center !important;
+    justify-content:space-between !important;
+    gap:0 !important;
+  }
+  .gallery .section-title h1{
+    position:absolute !important;
+    left:50% !important;
+    right:auto !important;
+    top:50% !important;
+    transform:translate(-50%,-50%) !important;
+    width:max-content !important;
+    margin:0 !important;
+    padding:0 !important;
+    text-indent:0 !important;
+    text-align:center !important;
+    white-space:nowrap !important;
+  }
+  .gallery .section-title i{
+    width:18% !important;
+    flex:0 0 18% !important;
+  }
+}
