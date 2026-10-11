@@ -12,6 +12,7 @@ const photos=[
 ["LION.jpg","Lion nebula (SH2-132)","2024, Bortle 8.\n98 hours total exposure."],
 ["orion.jpg","Great Orion & Running man nebulae (M42 - M43)","2024 Bortle 8.\n19 hours total exposure."],
 ["triangulum.jpg","Triangulum Galaxy (M33)","2024 Bortle 2.\n3 hours total exposure."],
+["pacman.jpg","Pacman nebula (NGC 281)","10 hours total exposure.\nBortle 8."],
 ["phases-moon.jpg","The Phases of the Moon","Composite image.\n200+ subs for each phase."],
 ["mineral-moon.png","The Mineral Moon.","Composite image.\n200 subs stacked."],
 ["moonclose3.jpg","Drawing Down the Moon.","South west of Mare Nubium,.\nBetween the craters Tycho and Stevinus.\n270 stacked images."],
