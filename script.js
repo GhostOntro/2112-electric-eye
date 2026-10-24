@@ -7,6 +7,7 @@ const photos=[
 ["brainv3.jpg","Crescent nebula (NGC 6888)","2026, Bortle 8.\n19h total exposure."],
 ["catspaw.jpg","Cat’s Paw nebula (NGC 6334)","2024 Bortle 2.\n3 hours total exposure."],
 ["dumbbell.jpg","Dumbbell nebula (M27)","Bortle 8 2026.\n9h total exposure."],
+["ElephantsTrunk.jpg","Elephant’s Trunk Nebula (IC 1396)","Bortle 8.\n11 hours total exposure."],
 ["eastern-veil.jpg","The Eastern Veil nebula (NGC 6992)","2024 Bortle 8.\n11 hours total exposure."],
 ["horsehead-flame.jpg","Horsehead and Flame nebulae (B33 & NGC 2024)","2023 Bortle 8.\n6 hours total exposure."],
 ["LION.jpg","Lion nebula (SH2-132)","2024, Bortle 8.\n98 hours total exposure."],
